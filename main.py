@@ -17,5 +17,19 @@ items = {
     'linux' : 0
 }
 print(items)
+inventory = ["bread", "milk", "cake", "corona", "coffee", "linux"]
+print(inventory)
+print("Which items would you like? ")
+print("when finished type 'done'")
+
+# creating an empty cart of items and then adding in
+cart = []
+def item_to_cart(item):
+    cart.append(item)
 
 
+while True:
+    new_item = input("Add an item: ")
+
+    if new_item == 'done':
+        break
